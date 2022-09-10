@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/divyareddy271/mini_assignment.git"
+    "url": "git+https://github.com/divyareddy271/mini_task.git"
   },
   "keywords": [
     "admin",
@@ -18,9 +18,9 @@
   "author": "divya",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/divyareddy271/mini_assignment/issues"
+    "url": "https://github.com/divyareddy271/mini_task/issues"
   },
-  "homepage": "https://github.com/divyareddy271/mini_assignment#readme",
+  "homepage": "https://github.com/divyareddy271/mini_task#readme",
   "dependencies": {
     "connect-mongo": "^4.6.0",
     "cookie-parser": "^1.4.6",
