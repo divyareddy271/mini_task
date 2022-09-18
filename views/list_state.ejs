@@ -1,0 +1,79 @@
+<body>
+    <%- include('list') %>
+    <div class="form">
+        <table>
+            <tr>
+                <th>Country</th>
+                <th>State</th>
+                <th colspan="2">Action</th>
+            </tr>
+        <% for(state of state) {%>
+            <tr>
+                <td><%= state.Country.Country_Name %></td>
+                <td><%= state.State %></td>
+                <td><a class="myBtn"href="/admin/get/state/<%=state._id%>">Edit</button></td> 
+                    <td><a  href="/admin/delete/state/<%=state._id%>">Delete</a> </td>
+            </tr>
+        <% } %>
+         
+    </div>
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div calss="model-form">
+                    <h1>Edit State</h1>
+                    <form onsubmit="return validation()" name="myform" action="/admin/edit/state" method="post">
+
+                        <label>Country: </label>
+                        <select id="editcountry" name="Country" >
+                            <option value="">Select Country</option>
+                        <% for(country of Country) { %>
+                            <option value="<%=country._id %>"><%=country.Country_Name %></option>
+                        <% } %>
+                        </select>
+                        <span style="text-align: center;" id="country-text"></span>
+                
+                        <label>State: &nbsp </label>
+                        <input type="hidden" id="stateid" name="s_id">
+                        <input type="text" placeholder="state" name="state" id="editstate" >
+                        <span style="text-align: center;" id="text"></span>
+                
+                        <div class="button">
+                            <input type = "reset" value="clear">
+                        <input type="submit" value="Update">
+                        </div>
+                    </form>  
+                </div>
+            </div>
+        </div>
+        <script src="<%= assetPath('js/list.js')%>"></script>
+        <script>
+            function validation(){
+               var valid = true
+                var Country= document.forms["myform"]["Country"].value;
+                var State= document.forms["myform"]["state"].value;  
+                console.log("called",Country)
+                if(Country==""){
+                document.getElementById("country-text").innerHTML = "Country cannot be empty"
+                valid = false; 
+                } 
+                else{
+                    document.getElementById("country-text").innerHTML = ""
+               // valid = true;
+                }
+                if(State==""){
+                document.getElementById("text").innerHTML = "State cannot be empty"
+                valid = false; 
+                } 
+                else{
+                    document.getElementById("text").innerHTML = ""
+              //  valid = true;
+                }
+                if(valid){
+                    return true
+                }
+                return false
+            }
+        </script> 
+</body>

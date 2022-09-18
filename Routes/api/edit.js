@@ -1,8 +1,9 @@
 const express = require("express")
 const Router = express.Router();
-const edit_controller = require("../../controller/Admin/edit")
-Router.get("/country",edit_controller.Editing_country)
-Router.get("/state",edit_controller.Editing_state)
-Router.get("/city",edit_controller.Editing_city);
+const {checkRoleapi, jwtAuth} = require("../../Config/Auth")
+const edit_controller = require("../../controller/api/Admin/edit")
+Router.patch("/country",jwtAuth,checkRoleapi(["admin"]),edit_controller.Editing_country)
+Router.patch("/state",jwtAuth,checkRoleapi(["admin"]),edit_controller.Editing_state)
+Router.patch("/city",jwtAuth,checkRoleapi(["admin"]),edit_controller.Editing_city);
 
 module.exports = Router;

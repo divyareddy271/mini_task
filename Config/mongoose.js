@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-
-mongoose.connect("mongodb://0.0.0.0:27017/mini_task");
+const env = require("../Config/environment")
+mongoose.connect(`mongodb://0.0.0.0:27017/${env.dbname}`);
 const db = mongoose.connection;
 
 db.on("error",console.error.bind(console,"error cannecting to db"));

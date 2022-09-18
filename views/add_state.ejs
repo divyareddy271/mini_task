@@ -1,0 +1,53 @@
+<body>
+    <%- include('add') %>
+
+        <div class="form">
+            <h1>Add State</h1>
+            <form onsubmit="return validation()" name="myform" action="/admin/add/state/create" method="post">
+
+                <label>Country: </label>
+                <select id="Country" name="Country" >
+                    <option value="">Select Country</option>
+                <% for(country of Country) { %>
+                    <option value="<%=country.Country_Name %>"><%=country.Country_Name %></option>
+                <% } %>
+                </select>
+                <span style="text-align: center;" id="country-text"></span>
+                <label>State: &nbsp </label>
+                <input type="text" placeholder="state" name="state" id="state" >
+                <span style="text-align: center;" id="text"></span>
+                <div class="button">
+                    <input type = "reset" value="clear">
+                <input type="submit" value="Save">
+                </div>
+            </form>
+        </div>
+        <script>
+            function validation(){
+               var valid = true
+                var Country= document.forms["myform"]["Country"].value;
+                var State= document.forms["myform"]["state"].value;  
+                console.log("called",Country)
+                if(Country==""){
+                document.getElementById("country-text").innerHTML = "Country cannot be empty"
+                valid = false; 
+                } 
+                else{
+                    document.getElementById("country-text").innerHTML = ""
+               // valid = true;
+                }
+                if(State==""){
+                document.getElementById("text").innerHTML = "State cannot be empty"
+                valid = false; 
+                } 
+                else{
+                    document.getElementById("text").innerHTML = ""
+              //  valid = true;
+                }
+                if(valid){
+                    return true
+                }
+                return false
+            }
+        </script>
+</body>

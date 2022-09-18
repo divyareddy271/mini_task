@@ -1,0 +1,59 @@
+<body>
+    <%- include('list') %>
+    <div class="form">
+        <table>
+            <tr>
+                <th>Country</th>
+                <th colspan="2">Action</th>
+            </tr>
+              <% for(country of country) {%>
+                <tr>
+                    <td><%= country.Country_Name %></td>
+                    <td><a class="mycountryBtn" href="/admin/get/country/<%=country._id%>" >edit</a> </td> 
+                    <td><a href="/admin/delete/country/<%=country._id%>">Delete</a> </td>
+                </tr>
+            <% } %>
+              
+        </table>   
+    </div>
+    
+<!-- The Modal -->
+    <div id="myModal" class="modal">
+    <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div calss="model-form">
+                 
+                <h1>Edit Country</h1>
+                <form onsubmit="return validation()" name="myform" action="/admin/edit/country" method="post">
+                    <input type="text" placeholder="Country" name="editcountry" id="editcountry">
+                    <input type="hidden" id="countryid" name="co_id"> 
+                    <span style="text-align: center;" id="text"></span>
+                 
+                    <div class="button">
+                                            
+                        <input type = "reset" value="clear">
+                    <input type="submit" value="Edit">
+                    </div>
+                </form>
+        </div>
+        </div>
+    </div>
+    
+
+    <script src="<%= assetPath('js/list.js')%>"></script> 
+    <script>
+        function validation(){
+           
+            var Country= document.forms["myform"]["editcountry"].value; 
+            console.log("called",Country)
+            if(Country==""){
+            document.getElementById("text").innerHTML = "Country cannot be empty"
+            return false; 
+            } 
+            document.getElementById("text").innerHTML = ""
+            return true;
+        }
+    </script>
+   
+</body>

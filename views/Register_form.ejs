@@ -1,0 +1,110 @@
+<!-- Customer Name* Text # Customer should be able to register his/her account.
+# Date of Birth: Show active dates in the Date of birth's calender before 18 years from today's date
+# Profile Photo: When the Customer uploads his/her profile photo, maintain a folder structure.
+Ex: Folder Structure should be Customer_Name_UniqueID >> file_name.png
+# Compatible extensions for profile photo should be .jpg and .png only.
+# Document: When the Customer uploads his/her document, maintain a folder structure.
+Ex: Folder Structure should be Customer_Name_UniqueID >> file_name.pdf
+# Compatible extensions for document should be .pdf, .xls, .jpg and .png only.
+# No duplicate record should be saved while registration w.r.t. Email Address & Mobile No.
+# Implement Server and client-side validation
+-->
+
+<link rel="stylesheet" href="<%= assetPath('css/register.css')%>">
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1 id="head">Register-Form</h1>
+        </div>
+        <div class="form-data">
+            <div>
+                <h1>General Information</h1>
+                <form name="myForm" id="form" method="post" onsubmit="return formvalidation()" required enctype="multipart/form-data" action="/customer/register-form/create-user">
+                    <input type="hidden" value="true" name="isActive">
+                    <input type="hidden" value="Manual" name="Register_by">
+    
+                    <label>Name<span style="color:red">*</span>:</label>
+                    <input type="Name" placeholder="Enter you Name " name="Name" id="Name" >
+                    <span  class="span" id="span-Name"></span>                
+                       
+                    <label>Data of Birth:</label>
+                    <input type="date" placeholder="Date of Birth" name="DOB" id="DOB">
+                    <span class="span" id="span-DOB"></span>
+                
+                    <label>Gender:</label>
+                    <select id="Gender" name="Gender" >
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <span class="span" id="span-Gender"></span>
+                 
+                    <label>Upload Profile<span style="color: red"> .jpg and .png</span></label>
+                    <input type="file" id="file" name="avtar">
+                    <span class="span" id="span-pp"></span>
+                
+                    <label>Document<span style="color: red"> pdf, .xls, .jpg and .png</span></label>
+                    <input type="file" name="docs">
+                    <span class="span" id="span-doc"></span>
+                    
+    
+                    <label>Password:</label>
+                    <input type="password" placeholder="Password" name="password" id="Password" >
+                    <span class="span" id="span-Password"></span>
+                
+                 
+                    <label>Confirm Password:</label>
+                    <input type="Pasword" placeholder="Confirm Password" name="C_password" id="C_password" >
+                    <span class="span" id="span-C_password"></span>
+
+                    <input type="reset" value="Clear">
+            </div>
+            
+            <div id="contact-details">
+                <h1>Contact Details</h1>
+
+                <label>Email<span style="color:red">*</span>:</label>
+                <input type="text" placeholder="Enter you email Address" name="email" id="email" >  
+                <span class="span" id="span-Email"></span>            
+                        
+                <label>Mobile Number<span style="color:red">*</span>:</label>
+                <input type="Text" placeholder="Enter you Mobile Numner" name="phnno" id="Phnno" >
+                <span class="span" id="span-Mno"></span> 
+
+                <label>Address:</label>
+                <textarea  rows="6.5" cols="90" placeholder="Address" name="Address" id="Address"></textarea>
+                <span  class="span" id="span-Adr"></span>            
+                        
+                <label>Country: </label>
+                <select id="country" name="Country" >
+                    <option value="">Select Country</option>
+                    <% for(country of country) { %>
+                        <option value="<%=country._id %>">
+                            <%=country.Country_Name %>
+                        </option>
+                        <% } %>
+                </select>
+                <span class="span" id="span-Country"></span>
+             
+                <label>State: </label>
+                <select id="state" name="State" >
+                    <option value="">Select State</option>
+                </select>
+                <span class="span" id="span-State"></span>
+
+                <label>City: </label>
+                <select id="city" name="City" >
+                    <option value="">Select City</option>
+                </select>
+                <span class="span" id="span-City"></span>
+                <input id = "btn" type="submit" value="Create an Account">
+                <span class="span" id="span-Name"></span>   
+            </div>          
+            </form>
+            </table>
+        </div>
+    </div>
+        <script src="<%= assetPath('js/add.js') %>"></script>
+        <script src="<%= assetPath('js/signup.js') %>"></script>
+</body>

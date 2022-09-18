@@ -1,0 +1,296 @@
+[0mGET / [36m304[0m 249.503 ms - -[0m
+[0mGET /favicon.ico [33m404[0m 2.377 ms - 150[0m
+[0mPOST /api/admin/sign-in [32m200[0m 205.977 ms - 467[0m
+[0mPOST /api/admin/sign-in [32m200[0m 118.191 ms - 467[0m
+[0mPOST /api/admin/sign-in [32m200[0m 248.227 ms - 467[0m
+[0mPOST /api/admin/sign-in [33m404[0m 6.306 ms - 73[0m
+[0mPOST /api/admin/sign-in [33m403[0m 3.651 ms - 81[0m
+[0mPOST /api/admin/sign-in [33m404[0m 2.409 ms - 73[0m
+[0mPOST /api/admin/sign-in [33m403[0m 3.340 ms - 81[0m
+[0mPOST /api/admin/sign-in [32m200[0m 105.942 ms - 467[0m
+[0mGET /api/admin/ [32m200[0m 23.413 ms - 52[0m
+[0mGET /api/admin/ [33m401[0m 0.869 ms - -[0m
+[0mPOST /api/admin/add/country [32m200[0m 33.224 ms - 53[0m
+[0mPOST /api/admin/add/country [33m401[0m 1.944 ms - -[0m
+[0mPOST /api/admin/add/country [33m400[0m 40.663 ms - 61[0m
+[0mPOST /api/admin/add/country [33m400[0m 32.452 ms - 87[0m
+[0mPOST /api/admin/add/country [33m400[0m 16.872 ms - 61[0m
+[0mPOST /api/admin/add/country [32m200[0m 66.962 ms - 72[0m
+[0mPOST /api/admin/add/country [33m400[0m 38.513 ms - 61[0m
+[0mPOST /api/admin/add/country [33m400[0m 32.071 ms - 69[0m
+[0mPOST /api/admin/add/country [32m200[0m 61.378 ms - 68[0m
+[0mPOST /api/admin/add/country [32m200[0m 26.142 ms - 68[0m
+[0mPOST /api/admin/add/country [32m200[0m 23.359 ms - 68[0m
+[0mPOST /api/admin/add/country [32m200[0m 27.352 ms - 68[0m
+[0mPOST /api/admin/add/country [32m200[0m 20.710 ms - 68[0m
+[0mPOST /api/admin/add/country [32m200[0m 121.191 ms - 68[0m
+[0mPOST /api/admin/add/country [33m400[0m 87.805 ms - 67[0m
+[0mPOST /api/admin/add/country [32m200[0m 40.685 ms - 69[0m
+[0mPOST /api/admin/add/country [33m400[0m 21.665 ms - 68[0m
+[0mPOST /api/admin/add/country [32m200[0m 18.732 ms - 69[0m
+[0mPOST /api/admin/add/state [31m500[0m 73.702 ms - 35[0m
+[0mPOST /api/admin/add/state [33m400[0m 17.168 ms - 69[0m
+[0mPOST /api/admin/add/state [31m500[0m 22.733 ms - 35[0m
+[0mPOST /api/admin/add/state [33m400[0m 16.412 ms - 69[0m
+[0mPOST /api/admin/add/state [33m400[0m 44.640 ms - 57[0m
+[0mPOST /api/admin/add/state [31m500[0m 80.124 ms - 41[0m
+[0mPOST /api/admin/add/state [33m400[0m 57.838 ms - 67[0m
+[0mPOST /api/admin/add/state [32m200[0m 55.446 ms - 76[0m
+[0mPOST /api/admin/add/state [33m401[0m 0.823 ms - -[0m
+[0mPOST /api/admin/add/state [33m400[0m 28.129 ms - 67[0m
+[0mPOST /api/admin/add/city [33m401[0m 1.062 ms - -[0m
+[0mPOST /api/admin/add/city [33m400[0m 28.718 ms - 83[0m
+[0mPOST /api/admin/add/city [32m200[0m 14.541 ms - 62[0m
+[0mPOST /api/admin/add/city [33m400[0m 19.071 ms - 65[0m
+[0mPOST /api/admin/add/city [33m400[0m 16.237 ms - 65[0m
+[0mPOST /api/admin/add/city [32m200[0m 134.964 ms - 88[0m
+[0mPOST /api/admin/add/city [32m200[0m 35.482 ms - 86[0m
+[0mGET /api/admin/list/customer/6321ed58aeb8bb1200c9aa24 [32m200[0m 18.690 ms - 587[0m
+[0mGET /api/admin/list/city [32m200[0m 97.177 ms - 1163[0m
+[0mGET /api/admin/list/city [33m401[0m 0.325 ms - -[0m
+[0mGET /api/admin/list/city [32m200[0m 161.943 ms - 1163[0m
+[0mGET /api/admin/list/city [32m200[0m 31.627 ms - 1163[0m
+[0mGET /api/admin/list/state [33m401[0m 0.479 ms - -[0m
+[0mGET /api/admin/list/state [32m200[0m 113.051 ms - 911[0m
+[0mGET /api/admin/list/country [33m401[0m 0.258 ms - -[0m
+[0mGET /api/admin/list/country [32m200[0m 16.259 ms - 1106[0m
+[0mGET /api/admin/list/customer/6321ed58aeb8bb1200c9aa24 [33m401[0m 1.818 ms - -[0m
+[0mGET /api/admin/list/customer/6321ed58aeb8bb1200c9aa24 [32m200[0m 14.385 ms - 587[0m
+[0mGET /api/admin/list/customers [32m200[0m 6.957 ms - 1794[0m
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+[0mGET / [32m200[0m 47.014 ms - 1438[0m
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod
+prod

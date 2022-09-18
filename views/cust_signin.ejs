@@ -1,0 +1,44 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="<%= assetPath('css/signup.css') %>">
+
+    <body>
+        <div class="container"> 
+            <div class="div-form">
+                <div class="details">
+                    <div><h1>Sign in to Auth</h1></div>
+                    <div class="social-icon">
+                        <a href="/customer/auth/google">
+                            <i class="fa fa-google" style="font-size:18px"></i>
+                        </a>
+                        <a href="/customer/auth/github"><i class="fa fa-github" style="font-size:18px"></i></a>
+                    </div>
+                    <span>or use your email account</span>
+                </div>
+                <div>
+                    <form action="/customer/sign-in/create-session" method="post">
+                        <input autocomplete="on" type="text" placeholder="Email" id="email" name="email">
+                        <input autocomplete="off" type="password" placeholder="Password" id="password" name="password">
+                        <!-- <a href="/sign-in/forgot">Forget your password?</a> -->
+                        <button style="margin-bottom: 50px;" type="submit">Sign In</button>
+                        
+                    </form>
+                </div>
+                <div>
+                   
+                </div>
+
+            </div>
+            <div class="div-image">
+                <h1>
+                    Hello. Friend!
+                </h1>
+                <span>
+                    Eneter your personal details and start journey with us
+                </span>
+                <a href="/customer/register-form">
+                    SIGN UP
+                </a>
+            </div>
+        </div>
+        

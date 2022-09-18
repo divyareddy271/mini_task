@@ -1,0 +1,86 @@
+<!-- min Listing: Customer Customer Name Label # Registered By: If the customer creates an account using social login (Google or Facebook) then show Google or Facebook
+label in this column.
+If the customer creates an account using the registration form then show Manual in this column.
+# If view then it should be redirected to the view page
+# If delete then it should be soft delete
+Mobile No Label
+Email Address Label
+Registered By Label
+Country Name Label
+State Name Label
+City Name Label
+IsActive Label
+Action View
+Delete -->
+
+<link rel="stylesheet" href="<%= assetPath('css/customer.css') %>">
+<body>
+<div class="main-container">
+    <% if(Active_customers.length>0){ %>
+        <div style="overflow-x: auto;">
+         <h1 style="text-align: center;">Active Users</h1>
+         <table id="customers">
+             <tr>
+                 <th>Mobile No</th>
+                 <th>Email Address </th>
+                 <th>Registered By</th>
+                 <th>Country</th>
+                 <th>State</th>
+                 <th>City</th>
+                 <th>Is Active</th>
+                 <th colspan="2">Actions</th>
+             </tr>
+             <% for(customer of Active_customers) { %>
+                 <tr>
+                     
+                     <td><%=customer.phnno %></td>
+                     <td><%=customer.email %></td>
+                     <td><%=customer.Register_by %></td>
+                     <td><%=customer.Country %></td>
+                     <td><%=customer.State %></td>
+                     <td><%=customer.City %></td>
+                     <td><%=customer.isActive %></td>
+                     <td><a href="/admin/list/customer/view/<%=customer.id %>">View</a></td>
+                     <td><a href="/admin/list/customer/delete/<%=customer.id %>">Delete</a></td>   
+                 </tr>
+             <% } %>
+         </table>
+        </div>
+     <% } else { %>
+        <h3 style="text-align: center;">No Active Users..!!</h3>
+    <% } %>
+     <% if(Inactive_customers.length>0){ %>
+        <div style="overflow-x: auto;">
+            <h1 style="text-align: center;">Inactive Users</h1>
+            <table id="customers">
+                <tr>
+                    <th>Mobile No</th>
+                    <th>Email Address </th>
+                    <th>Registered By</th>
+                    <th>Country</th>
+                    <th>State</th>
+                    <th>City</th>
+                    <th>Is Active</th>
+                    <th colspan="2">Actions</th>
+                </tr>
+                <% for(customer of Inactive_customers) { %>
+                    <tr>
+                        
+                        <td><%=customer.phnno %></td>
+                        <td><%=customer.email %></td>
+                        <td><%=customer.Register_by %></td>
+                        <td><%=customer.Country %></td>
+                        <td><%=customer.State %></td>
+                        <td><%=customer.City %></td>
+                        <td><%=customer.isActive %></td>
+                        <td><a href="/admin/list/customer/view/<%=customer.id %>">View</a></td>
+                        <td><a href="/admin/list/customer/activate/<%=customer.id %>">Activate</a></td>   
+                    </tr>
+                <% } %>
+            </table>
+        </div>
+    <% } else { %>
+        <h3 style="text-align: center;">No Inactive Users..!!</h3>
+    <% } %>      
+</div>
+</body>

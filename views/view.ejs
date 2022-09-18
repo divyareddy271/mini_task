@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="<%= assetPath('css/view.css') %>">
+<body>
+<% if(locals.user) {%>
+    <div class="main-container">
+        <div class="container">
+            <div class="left" >
+                <div class="top">
+                    <img src="<%=customer.avtar %>"> 
+                    <span><%=customer.Name%> </span>
+                    <span><%=customer.email  %></span>
+                    
+                </div>
+                <div class="bottom">
+                    <h4>Account Details</h4>
+                   <table>
+                    <tr>
+                        <td class="bold">isActive</td>
+                        <td><%=customer.isActive%></td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Register_by</td>
+                        <td><%=customer.Register_by   %></td>
+                    </tr>
+                   </table>
+                    
+                </div>
+            </div>
+            <div class="right" >
+                <div class="top">
+                    <h4>Contact Details</h4>
+                    <table>
+                        <tr>
+                            <td class="bold">Address</td>
+                            <td><%=customer.Address%></td>
+                        </tr>
+                        <tr>
+                            <td class="bold">Country</td>
+                            <td><%=customer.Country%></td>
+                        </tr>
+                        <tr>
+                            <td class="bold">State</td>
+                            <td><%=customer.State%></td>
+                        </tr>
+                        <tr>
+                            <td class="bold">City</td>
+                            <td><%=customer.City%></td>
+                        </tr>
+                        <tr>
+                            <td class="bold">Phone Number </td>
+                            <td><%=customer.phnno%></td>
+                        </tr>
+                    </table>
+                   
+                </div>
+                <div class="bottom">
+                    <h4>General Information</h4>
+                   <table>
+                    <tr>
+                        <td class="bold">Gender</td>
+                        <td><%=customer.Gender%></td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Date of Birth</td>
+                        <td><%=customer.DOB%></td>
+                    </tr>
+                   </table>
+        
+                </div>
+            </div>
+          </div>
+          <div class="document-view">
+            <iframe
+                src="<%=customer.docs%>"
+            
+                scrolling="auto"
+                height="00px"
+                width="100%">
+            </iframe>
+          </div>  
+     </div>
+<%}%>
+</body>

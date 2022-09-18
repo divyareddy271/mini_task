@@ -1,0 +1,28 @@
+<body>
+    <%- include('add') %>
+
+        <div class="form">
+            <h1>Add Country</h1>
+            <form onsubmit="return validation()" name="myform" action="/admin/add/country/create" method="post">
+                <input type="text" placeholder="Country" name="country" id="country">
+                <span style="text-align: center;" id="text"></span>
+                <div class="button">
+                    <input type = "reset" value="clear">
+                <input type="submit" value="Save">
+                </div>
+            </form>
+        </div>
+    <script>
+        function validation(){
+           
+            var Country= document.forms["myform"]["country"].value; 
+            console.log("called",Country)
+            if(Country==""){
+            document.getElementById("text").innerHTML = "Country cannot be empty"
+            return false; 
+            } 
+            document.getElementById("text").innerHTML = ""
+            return true;
+        }
+    </script>
+</body>

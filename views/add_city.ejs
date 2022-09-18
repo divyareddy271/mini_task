@@ -1,0 +1,69 @@
+<body>
+    <%- include('add') %>
+
+        <div class="form">
+            <h1 id="head">Add City</h1>
+            <form onsubmit="return validation()" name="myform" method="post" action="/admin/add/city/create">
+                <label>Country: </label>
+                <select id="country" name="Country" >
+                    <option value="">Select Country</option>
+                    <% for(country of Country) { %>
+                        <option value="<%=country._id %>"><%=country.Country_Name %></option>
+                    <% } %>
+                </select>
+                <span style="text-align: center;" id="country-text"></span>
+                <label>State: </label>
+                <select id="state" name="State" >
+                    <option value="">Select State</option>
+                </select>
+                <span style="text-align: center;" id="state-text"></span>
+               
+                <label>City: &nbsp </label>
+                <input type="text" placeholder="City" name="City" id="city" >
+                <span style="text-align: center;" id="text"></span>
+                <div class="button">
+                    <input type = "reset" value="clear">
+                <input type="submit" value="Save">
+                </div>
+            </form>
+        </div>
+        <script src="<%= assetPath('js/add.js') %>"></script>
+        <script>
+            function validation(){
+               var valid = true;
+                var Country= document.forms["myform"]["Country"].value;
+                var State= document.forms["myform"]["State"].value;  
+                var City= document.forms["myform"]["City"].value;  
+                console.log("called",Country)
+                if(Country==""){
+                document.getElementById("country-text").innerHTML = "Country cannot be empty"
+
+                } 
+                else{
+                    document.getElementById("country-text").innerHTML = ""
+
+                }
+                if(State==""){
+                document.getElementById("state-text").innerHTML = "State cannot be empty"
+
+                } 
+                else{
+                    document.getElementById("state-text").innerHTML = ""
+
+                }
+                if(City==""){
+                document.getElementById("text").innerHTML = "City cannot be empty"
+
+                } 
+                else{
+                    document.getElementById("text").innerHTML = ""
+
+                }
+                console.log(Country , State, City)
+                if(Country !="" && State!="" && City!=""){
+                    return true
+                }
+                return false
+            }
+        </script>
+</body>

@@ -1,0 +1,25 @@
+body{
+    background-color: lightgrey;
+    margin: 0%;
+}
+nav{
+    width: 100%;
+    background-color:black;
+    a{
+        display: inline-block;
+        padding: 20px;
+        background-color: black;
+        color: white;
+        margin: 0;
+        text-align: center;
+        text-decoration: none;
+    }
+    a:hover{
+            background-color: #04AA6D!important;
+            color: #ffffff;
+       
+    }
+    li {
+        display: inline-block;
+    }
+}

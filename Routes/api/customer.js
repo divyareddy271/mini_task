@@ -1,10 +1,10 @@
 const express = require("express")
 const Router = express.Router();
-const customer_controller = require("../../controller/Customer/customer")
+const customer_controller = require("../../controller/api/Customer/customer")
 
-Router.get("/register-form",customer_controller.register)
+const {checkRoleapi, jwtAuth} = require("../../Config/Auth")
+Router.post("/register-form",customer_controller.register)
 Router.get("/sign-in",customer_controller.signin);
-Router.get("/Dashboard",customer_controller.Dashboard);
-Router.get("/sign-out",customer_controller.signout
-)
+Router.get("/",jwtAuth,checkRoleapi(["user"]),customer_controller.Dashboard);
+Router.get("/sign-out",jwtAuth,checkRoleapi(["user"]),customer_controller.signout)
 module.exports = Router;

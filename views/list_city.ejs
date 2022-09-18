@@ -1,0 +1,96 @@
+<body>
+    <%- include('list') %>
+    <div class="form">
+        <table>
+            <tr>
+                <th>Country</th>
+                <th>State</th>
+                <th>City</th>
+                <th colspan="2">Action</th>
+            </tr>
+        <% for(city of city) {%>
+            <tr>
+                <td><%= city.Country.Country_Name %></td>
+                <td><%= city.State.State %></td>
+                <td><%= city.City %></td>
+                <td><a class="myCityBtn" href="/admin/get/city/<%=city._id%>">edit</a> </td> 
+                    <td><a href="/admin/delete/city/<%=city._id%>">Delete</a> </td>
+            </tr>
+        <% } %>
+         
+    </div>
+       
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div calss="model-form">
+                <h1 id="head">Edit City</h1>
+                <form onsubmit="return validation()" name="myform" method="post" action="/admin/edit/city">
+                    <label>Country: </label>
+                    <select id="country" name="Country" >
+                        <option value="">Select Country</option>
+                        <% for(country of Country) { %>
+                            <option value="<%=country._id %>"><%=country.Country_Name %></option>
+                        <% } %>
+                    </select>
+                    <span style="text-align: center;" id="country-text"></span>
+                    <label>State: </label>
+                    <select id="state" name="state" >
+                        <option value="">Select State</option>
+                    </select>
+                    <span style="text-align: center;" id="state-text"></span>
+                    <input type="hidden" id="cityid" name="c_id">
+                    <label>City: &nbsp </label>
+                    <input type="text" placeholder="City" name="city" id="editcity" >
+                    <span style="text-align: center;" id="text"></span>
+                
+                    <div class="button">
+                        <input type = "reset" value="clear">
+                    <input type="submit" value="Save">
+                    </div>
+                </form>    
+            </div>
+        </div>
+    </div>
+    <script src="<%= assetPath('js/list.js')%>"></script> 
+    <script src="<%= assetPath('js/add.js') %>"></script> 
+    <script>
+        function validation(){
+           var valid = true;
+            var Country= document.forms["myform"]["Country"].value;
+            var State= document.forms["myform"]["state"].value;  
+            var City= document.forms["myform"]["city"].value;  
+            if(Country==""){
+            document.getElementById("country-text").innerHTML = "Country cannot be empty"
+            valid = false;
+            } 
+            else{
+                document.getElementById("country-text").innerHTML = ""
+
+            }
+            if(State==""){
+            document.getElementById("state-text").innerHTML = "State cannot be empty"
+            valid = false;
+            } 
+            else{
+                document.getElementById("state-text").innerHTML = ""
+
+            }
+            if(City==""){
+            document.getElementById("text").innerHTML = "City cannot be empty"
+            valid = false;
+            } 
+            else{
+                document.getElementById("text").innerHTML = ""
+
+            }
+            //console.log(Country , State, City)
+            if(valid){
+                return true
+            }
+            return false
+        }
+    </script>
+</body>

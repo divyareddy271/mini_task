@@ -1,0 +1,24 @@
+<nav>
+    <ul> 
+        <li><a href="">Mini_task</a></li>  
+        <% if(locals.user ) { %>
+        
+        <%if (locals.user.role == "admin") { %>
+            
+                <li><a href="/admin/list/country">list country/state/city</a></li>
+                <li><a href="/admin/add/country">Add country/state/city</a></li>
+                <li><a href="/admin/list/customers">List of customer</a></li>
+                <li style="float:right"><a href="/admin/sign-out">Sign out</a></li>
+                <li style="float:right"><a  href="/admin/"><%=locals.user.Name %></a></li>
+            <% } else { %>
+            <li style="float:right"><a href="/customer/sign-out">Sign out</a></li>
+            <li style="float:right"><a  href="/customer/"><%=locals.user.Name %></a></li>
+            <% } %>
+
+    <%} else {%>
+
+        <li><a href="/customer/register-form">Register</a></li>
+        <li><a href="/customer/sign-in">Sign In</a></li>
+    <% } %>
+</ul>
+</nav>

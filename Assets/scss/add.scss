@@ -1,0 +1,97 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width:30%;
+    margin-top:20px ;
+    // border: 1px solid black;
+    justify-content:space-around;
+
+}
+.container > div {
+    padding: 20px 50px 20px 50px;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+    margin: auto;
+    background-color: white;
+}
+a{
+    color: black;
+}
+a:active {
+    background-color: yellow;
+  }
+
+    .form {
+        width : 50%;
+        margin: auto;
+        border: 1px solid black;
+        margin-top: 70px;
+        padding: 10px;
+        padding-bottom: 30px;;
+        background-color: rgb(160, 160, 217);
+        label{ 
+            display: inline-block;
+            margin: auto;
+           margin-left: 10%;
+            
+            font-size: 20px;
+        }
+        input,select {
+            display: block;
+            margin: auto;
+            height: 40px;
+            width: 60%;
+            margin-top:30px;
+            border: 1px solid black;
+        }
+        
+        h1{
+            text-align: center;
+        }
+        
+        .button {
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+    
+        }
+        input[type='reset'],input[type='submit'] {
+            display: inline-block;
+            width:45%;
+           padding: 10px;
+           font-size: 20px;
+            background-color: rgb(67, 67, 228);
+            margin: auto;
+            margin-top: 30px;
+            color: white;
+            text-align: center;
+       
+     
+            
+        }
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+
+// <div class="form">
+// 
+span {
+    text-align: center;
+    display: block;
+    
+}
