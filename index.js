@@ -2,7 +2,7 @@ const express = require("express"); //Framework used
 const mongoose = require("mongoose"); //TO use mongo db
 const env = require("./Config/environment") //To get password and other critical data
 const app = express(); 
-require('./config/view_helper')(app);
+require("./Config/view_helper")(app);
 const logger = require("morgan");
 var bodyParser = require('body-parser')
 const expressLayouts = require("express-ejs-layouts") //Layouts - ejs
@@ -20,7 +20,7 @@ const passport_git = require("./Config/passport_git_auth")
 const passport_local = require("./Config/passport_local_auth")
 const passport_jwt = require("./Config/passport_jwt_auth")
 const passport_google = require("./Config/passport_google_auth")
-const custommiddleware = require("./config/middleware");
+const custommiddleware = require("./Config/middleware");
 //Mioddleware used to tell the application to access SASS files and convert to CSS
 if(env.name == "development" ){
     //console.log(path.join(__dirname,env.assetpath,"scss"))
