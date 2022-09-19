@@ -53,13 +53,13 @@ module.exports.Create_country  = async function(req,res){
 }
 module.exports.Create_state  = async function(req,res){
     try {
-        if(req.body.Country && re.body.state){
+        if(req.body.Country && req.body.state){
             let country = await Country.findOne({Country_Name:req.body.Country});
         let state = await State.findOne({
             Country : country._id,
             State : req.body.state,
         })
-  
+     //   console.log("error",country)
         if(state){
             req.flash("error", `The state name already exists for ${req.body.Country}. `)
             return res.redirect("back")
@@ -82,6 +82,7 @@ module.exports.Create_state  = async function(req,res){
     } 
     catch(err){
         req.flash("error","Internal server error")
+        console.log("error",err)
         return res.redirect("back") 
     }
 }
@@ -123,6 +124,7 @@ module.exports.Create_city  =async  function(req,res){
         }
     } 
     catch(err){
+        console.log(err)
         req.flash("error","Internal server error")
         return res.redirect("back") 
     }

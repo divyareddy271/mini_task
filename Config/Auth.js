@@ -1,8 +1,13 @@
 const passport = require("passport");
+const custlocalAuth = passport.authenticate(
+    "local",
+    {failureRedirect : "/customer/sign-in",
+    failureFlash : true },
+);
 //passport middleware 
 const localAuth = passport.authenticate(
     "local",
-    {failureRedirect : "/customer/register-form",
+    {failureRedirect : "/admin/sign-in",
     failureFlash : true },
 );
 const jwtAuth = passport.authenticate("jwt",{session:false});
@@ -52,6 +57,7 @@ module.exports = {
     checkauthentication,
     gitAuth,
     gitAuthscope,
-    checkRoleapi
+    checkRoleapi,
+    custlocalAuth
 
 } 

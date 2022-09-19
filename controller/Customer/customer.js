@@ -66,7 +66,7 @@ module.exports.create_user = async function(req,res){
                             console.log("cannot upload image");
                             req.flash("error","Cannot upload the file..plz select only image files");
                         }
-                        
+                        let country = Country.findById(req.body.country); 
                         let customer_create = await Customer.create({
                             isActive: true,
                             Register_by:"Manual",
@@ -76,7 +76,7 @@ module.exports.create_user = async function(req,res){
                             DOB:req.body.DOB,
                             Gender:req.body. Gender,
                             Address:req.body.Address,
-                            Country:req.body.Country,
+                            Country:country.Country_Name,
                             State:req.body. State,
                             City:req.body.City,
                             password:req.body.password,

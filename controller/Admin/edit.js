@@ -102,7 +102,9 @@ module.exports.delete_country  = async function(req,res){
    if(country){
     await State.deleteMany({ Country :country._id}) 
     await City.deleteMany({ Country :country._id})
-    country.remove();
+    country.isDeleted  = true;
+    country.save();
+    //country.remove();
     req.flash("success","Successfully removed country")
     return res.redirect("back")
    }
@@ -115,11 +117,13 @@ module.exports.delete_state  = async function(req,res){
    if(state)
    {
     console.log(state,state.Country,state.State);
-    await City.deleteMany({ State :req.params.id})
-    let country = await Country.findByIdAndUpdate(state.Country, 
-        {$pull : {States : req.params.id}});
-  console.log(country.States,req.params.id)
-    state.remove();
+   // await City.deleteMany({ State :req.params.id})
+    //let country = await Country.findByIdAndUpdate(state.Country, 
+      //  {$pull : {States : req.params.id}});
+    console.log(country.States,req.params.id)
+    state.isDeleted  = true;
+    state.save();
+    //state.remove();
     req.flash("success","Successfully removed state")
     return res.redirect("back")
    }
@@ -130,9 +134,12 @@ module.exports.delete_state  = async function(req,res){
 module.exports.delete_city  = async function(req,res){
     let city = await City.findById(req.params.id);
    if(city){
-    await State.findByIdAndUpdate(city.State, 
-        {$pull : {Cities : req.params.id}});
-    city.remove();
+    // await State.findByIdAndUpdate(city.State, 
+    //     {$pull : {Cities : req.params.id}});
+  //  city.isActive  = false;
+    city.isDeleted  = true;
+    city.save();
+    //city.remove();
     req.flash("success","Successfully removed city")
     return res.redirect("back")
    }

@@ -66,7 +66,7 @@ const Doc_Path = path.join("/Uploads/customers/documents")
    },
    isDeleted : {
     type : Boolean,
-    defaults : false
+    default : false
    }
    
  },{timestamps : true});

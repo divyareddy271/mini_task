@@ -16,8 +16,16 @@ const mongoose = require("mongoose");
             ref: 'City'
         }
     ],
-    
-    
+    isDeleted : {
+        type : Boolean,
+        default : false
+    }   
  },{timestamps : true});
+StateSchema.pre("find",function(){
+    this.where({isDeleted : false})
+})
+StateSchema.pre("findOne",function(){
+    this.where({isDeleted : false})
+})
  const State = mongoose.model("State",StateSchema);
  module.exports = State;
