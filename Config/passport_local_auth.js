@@ -9,6 +9,7 @@ passport.use(new LocalStrategy({
     usernameField : "email",
    },
     function (email,password,done) {
+        console.log(email,password)
         Customer.findOne({email : email}, async function(err,user){
     
             if(err){
@@ -36,7 +37,8 @@ passport.use(new LocalStrategy({
              return done(null,false, {message: ' Invalid Username/Password'});
              }
              else{
-               console.log("error",'Invalid Username/Password');
+
+               console.log(user,'Invalid Username/Password');
                 return done(null,false, {message: 'Invalid Username/Password'});
              }
         })

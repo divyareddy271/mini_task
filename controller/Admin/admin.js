@@ -1,5 +1,5 @@
 const Customer = require("../../models/customer_schema")
-
+const Country = require("../../models/country_schema")
 module.exports.signin  = async function(req,res){
     console.log("reached")
  return res.render("admin_signin",
@@ -31,4 +31,18 @@ module.exports.Dashboard  = async function(req,res){
        title:"Dashbooard",
        customer : customer
    })
+}
+module.exports.edit= async function(req,res){
+   const user= await Customer.findById(req.params.id);
+   let country = await Country.find({});
+   if(user && user.role =="admin"){
+      return res.render("edit_details",{
+         title:"Update",
+         user: user,
+         country : country,
+     })
+   }
+   else{
+      return res.redirect("/admin/sign-in");
+   }
 }

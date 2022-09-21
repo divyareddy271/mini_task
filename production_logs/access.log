@@ -66,190 +66,410 @@ prod
 prod
 prod
 prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
-prod
+[0mGET /customer/sign-in [32m200[0m 28.509 ms - 3277[0m
+[0mPOST /customer/sign-in/create-session [36m302[0m 822.494 ms - 64[0m
+[0mGET /customer/ [32m200[0m 78.611 ms - 4452[0m
+[0mGET /customer/ [36m304[0m 22.392 ms - -[0m
+[0mGET /customer/edit/6321ed58aeb8bb1200c9aa24 [33m404[0m 5.701 ms - 177[0m
+[0mGET /customer/edit/6321ed58aeb8bb1200c9aa24 [36m302[0m 218.712 ms - 72[0m
+[0mGET /admin/sign-in [32m200[0m 25.417 ms - 3920[0m
+[0mGET /customer/sign-in [36m302[0m 4.171 ms - 64[0m
+[0mGET /customer/ [36m304[0m 45.647 ms - -[0m
+[0mGET /customer/edit/6321ed58aeb8bb1200c9aa24 [36m302[0m 28.116 ms - 72[0m
+[0mGET /admin/sign-in [36m304[0m 6.242 ms - -[0m
+[0mGET /customer/edit/6321ed58aeb8bb1200c9aa24 [36m302[0m 22.423 ms - 72[0m
+[0mGET /admin/sign-in [36m304[0m 7.289 ms - -[0m
+[0mGET /customer/ [36m304[0m 75.335 ms - -[0m
+[0mGET /customer/edit/6321ed58aeb8bb1200c9aa24 [32m200[0m 43.325 ms - 6710[0m
+[0mGET /admin/ [36m302[0m 15.817 ms - 78[0m
+[0mGET /customer/sign-in [32m200[0m 218.682 ms - 3277[0m
+[0mGET /admin/add/country [36m302[0m 1.837 ms - 78[0m
+[0mGET /customer/sign-in [36m304[0m 6.696 ms - -[0m
+[0mGET /admin/sign-in [32m200[0m 25.241 ms - 3744[0m
+[0mPOST /admin/sign-in/create-session [36m302[0m 186.912 ms - 72[0m
+[0mGET /admin/sign-in [32m200[0m 25.043 ms - 4013[0m
+[0mPOST /admin/sign-in/create-session [36m302[0m 8.112 ms - 72[0m
+[0mGET /admin/sign-in [32m200[0m 4.868 ms - 4012[0m
+[0mGET /admin/sign-in [32m200[0m 4.966 ms - 3744[0m
+[0mPOST /admin/sign-in/create-session [36m302[0m 5.024 ms - 72[0m
+[0mGET /admin/sign-in [32m200[0m 9.366 ms - 4012[0m
+[0mGET / [32m200[0m 9.444 ms - 1446[0m
+[0mGET /admin/sign-in [32m200[0m 8.635 ms - 3744[0m
+[0mPOST /admin/sign-in/create-session [36m302[0m 7.624 ms - 72[0m
+[0mGET /admin/sign-in [32m200[0m 6.202 ms - 4012[0m
+[0mPOST /admin/sign-in/create-session [36m302[0m 15.628 ms - 72[0m
+[0mGET /admin/sign-in [36m304[0m 798.840 ms - -[0m
+[0mPOST /admin/sign-in/create-session [36m302[0m 19.828 ms - 72[0m
+[0mGET /admin/sign-in [36m304[0m 16.819 ms - -[0m
+[0mPOST /admin/sign-in/create-session [36m302[0m 281.231 ms - 58[0m
+[0mGET /admin/ [32m200[0m 113.483 ms - 4717[0m
+[0mGET /admin/list/country [32m200[0m 62.036 ms - 3959[0m
+[0mGET /admin/add/country [32m200[0m 140.842 ms - 3210[0m
+[0mGET /admin/list/country [36m304[0m 27.776 ms - -[0m
+[0mGET /admin/list/state [32m200[0m 94.377 ms - 4943[0m
+[0mGET /admin/list/city [32m200[0m 50.451 ms - 5371[0m
+[0mGET /admin/add/country [36m304[0m 13.395 ms - -[0m
+[0mPOST /admin/add/country/create [36m302[0m 277.679 ms - 122[0m
+[0mGET /admin/add/country [32m200[0m 37.382 ms - 3486[0m
+[0mPOST /admin/add/country/create [36m302[0m 22.941 ms - 122[0m
+[0mGET /admin/add/country [32m200[0m 19.311 ms - 3484[0m
+[0mPOST /admin/add/country/create [36m302[0m 12.342 ms - 122[0m
+[0mGET /admin/add/country [32m200[0m 12.085 ms - 3486[0m
+[0mPOST /admin/add/country/create [36m302[0m 23.252 ms - 122[0m
+[0mGET /admin/add/country [36m304[0m 17.400 ms - -[0m
+[0mPOST /admin/add/country/create [36m302[0m 10.833 ms - 122[0m
+[0mGET /admin/add/country [36m304[0m 8.143 ms - -[0m
+[0mPOST /admin/add/country/create [36m302[0m 13.943 ms - 122[0m
+[0mGET /admin/add/country [36m304[0m 7.513 ms - -[0m
+[0mPOST /admin/add/country/create [36m302[0m 15.956 ms - 122[0m
+[0mGET /admin/add/country [36m304[0m 10.705 ms - -[0m
+[0mGET /admin/add/state [32m200[0m 105.566 ms - 4613[0m
+[0mPOST /admin/add/state/create [36m302[0m 23.291 ms - 118[0m
+[0mGET /admin/add/state [32m200[0m 11.368 ms - 4883[0m
+[0mPOST /admin/add/state/create [36m302[0m 19.020 ms - 118[0m
+[0mGET /admin/add/state [36m304[0m 13.582 ms - -[0m
+[0mPOST /admin/add/state/create [36m302[0m 59.786 ms - 118[0m
+[0mGET /admin/add/state [36m304[0m 20.184 ms - -[0m
+[0mPOST /admin/add/state/create [36m302[0m 13.882 ms - 118[0m
+[0mGET /admin/add/state [36m304[0m 11.302 ms - -[0m
+[0mPOST /admin/add/state/create [36m302[0m 16.187 ms - 118[0m
+[0mGET /admin/add/state [36m304[0m 14.400 ms - -[0m
+[0mPOST /admin/add/state/create [36m302[0m 18.980 ms - 118[0m
+[0mGET /admin/add/state [36m304[0m 13.763 ms - -[0m
+[0mPOST /admin/add/state/create [36m302[0m 20.407 ms - 118[0m
+[0mGET /admin/add/state [36m304[0m 17.484 ms - -[0m
+[0mPOST /admin/add/state/create [36m302[0m 18.784 ms - 118[0m
+[0mGET /admin/add/state [36m304[0m 16.883 ms - -[0m
+[0mPOST /admin/add/state/create [36m302[0m 13.675 ms - 118[0m
+[0mGET /admin/add/state [32m200[0m 14.960 ms - 4897[0m
+[0mGET /admin/add/city [32m200[0m 38.164 ms - 5384[0m
+[0mGET /get_data?type=load_state&parent_value=632a8460749ef611510c2f22 [32m200[0m 306.426 ms - 22[0m
+[0mPOST /admin/add/city/create [36m302[0m 37.026 ms - 116[0m
+[0mGET /admin/add/city [32m200[0m 13.397 ms - 5648[0m
+[0mGET /get_data?type=load_state&parent_value=632a8460749ef611510c2f22 [36m304[0m 8.159 ms - -[0m
+[0mPOST /admin/add/city/create [36m302[0m 9.646 ms - 116[0m
+[0mGET /admin/add/city [36m304[0m 13.399 ms - -[0m
+[0mGET /get_data?type=load_state&parent_value=632a846b749ef611510c2f2a [32m200[0m 6.881 ms - 13[0m
+[0mPOST /admin/add/city/create [36m302[0m 48.735 ms - 116[0m
+[0mGET /admin/add/city [36m304[0m 14.659 ms - -[0m
+[0mGET /get_data?type=load_state&parent_value=632a846b749ef611510c2f2a [36m304[0m 22.874 ms - -[0m
+[0mPOST /admin/add/city/create [36m302[0m 19.662 ms - 116[0m
+[0mGET /admin/add/city [36m304[0m 42.852 ms - -[0m
+[0mGET /get_data?type=load_state&parent_value=632a8460749ef611510c2f22 [36m304[0m 20.739 ms - -[0m
+[0mPOST /admin/add/city/create [36m302[0m 43.588 ms - 116[0m
+[0mGET /admin/add/city [32m200[0m 25.007 ms - 5653[0m
+[0mGET /get_data?type=load_state&parent_value=632a8460749ef611510c2f22 [36m304[0m 10.389 ms - -[0m
+[0mPOST /admin/add/city/create [36m302[0m 21.587 ms - 116[0m
+[0mGET /admin/add/city [36m304[0m 16.944 ms - -[0m
+[0mGET /get_data?type=load_state&parent_value=632a846b749ef611510c2f2a [36m304[0m 6.166 ms - -[0m
+[0mPOST /admin/add/city/create [36m302[0m 23.787 ms - 116[0m
+[0mGET /admin/add/city [36m304[0m 15.197 ms - -[0m
+[0mGET /get_data?type=load_state&parent_value=632a846f749ef611510c2f2f [32m200[0m 7.192 ms - 14[0m
+[0mPOST /admin/add/city/create [36m302[0m 305.803 ms - 116[0m
+[0mGET /admin/add/city [36m304[0m 11.466 ms - -[0m
+[0mGET /get_data?type=load_state&parent_value=632a8472749ef611510c2f34 [32m200[0m 8.086 ms - 19[0m
+[0mPOST /admin/add/city/create [36m302[0m 24.312 ms - 116[0m
+[0mGET /admin/add/city [36m304[0m 15.807 ms - -[0m
+[0mGET /get_data?type=load_state&parent_value=632a8476749ef611510c2f39 [32m200[0m 24.109 ms - 6[0m
+[0mPOST /admin/add/city/create [36m302[0m 25.511 ms - 116[0m
+[0mGET /admin/add/city [36m304[0m 13.484 ms - -[0m
+[0mGET /get_data?type=load_state&parent_value=632a8476749ef611510c2f39 [36m304[0m 5.554 ms - -[0m
+[0mGET /get_data?type=load_state&parent_value=632a847a749ef611510c2f3e [32m200[0m 7.729 ms - 15[0m
+[0mPOST /admin/add/city/create [36m302[0m 21.611 ms - 116[0m
+[0mGET /admin/add/city [36m304[0m 12.913 ms - -[0m
+[0mGET /get_data?type=load_state&parent_value=632a8460749ef611510c2f22 [36m304[0m 4.811 ms - -[0m
+[0mPOST /admin/add/city/create [36m302[0m 26.997 ms - 116[0m
+[0mGET /admin/add/city [36m304[0m 12.288 ms - -[0m
+[0mGET /admin/list/customers [32m200[0m 129.788 ms - 6587[0m
+[0mGET /admin/list/country [32m200[0m 16.250 ms - 5825[0m
+[0mGET /admin/get/country/632a8460749ef611510c2f22 [32m200[0m 2.894 ms - 266[0m
+[0mPOST /admin/edit/country [36m302[0m 16.483 ms - 124[0m
+[0mGET /admin/list/country [32m200[0m 11.470 ms - 6101[0m
+[0mGET /admin/get/country/632a846b749ef611510c2f2a [32m200[0m 2.865 ms - 242[0m
+[0mGET /admin/delete/country/632a8472749ef611510c2f34 [36m302[0m 20.400 ms - 124[0m
+[0mGET /admin/list/country [32m200[0m 15.773 ms - 6099[0m
+[0mGET /admin/list/country [32m200[0m 15.242 ms - 5516[0m
+[0mGET /admin/list/state [32m200[0m 24.248 ms - 7409[0m
+[0mGET /admin/list/city [32m200[0m 26.951 ms - 8392[0m
+[0mGET /admin/list/state [36m304[0m 22.524 ms - -[0m
+[0mGET /admin/get/state/632a8532749ef611510c2f7a [32m200[0m 5.236 ms - 264[0m
+[0mPOST /admin/edit/state [36m302[0m 57.651 ms - 120[0m
+[0mGET /admin/list/state [32m200[0m 22.437 ms - 7685[0m
+[0mGET /admin/list/customers [36m304[0m 18.311 ms - -[0m
+[0mGET /admin/list/customer/view/6321ed58aeb8bb1200c9aa24 [32m200[0m 357.618 ms - 4667[0m
+[0mGET /admin/sign-in [32m200[0m 52.334 ms - 4204[0m
+[0mPOST /admin/sign-in/create-session [36m302[0m 559.592 ms - 58[0m
+[0mGET /admin/ [36m304[0m 46.427 ms - -[0m
+[0mGET /admin/list/country [36m304[0m 45.626 ms - -[0m
+[0mGET /admin/list/state [32m200[0m 79.203 ms - 7413[0m
+[0mGET /admin/list/country [36m304[0m 29.288 ms - -[0m
+[0mGET /admin/delete/country/632a8460749ef611510c2f22 [36m302[0m 59.733 ms - 124[0m
+[0mGET /admin/list/country [32m200[0m 28.551 ms - 5479[0m
+[0mGET /admin/list/state [32m200[0m 43.984 ms - 6667[0m
+[0mGET /admin/list/country [32m200[0m 86.668 ms - 5205[0m
+[0mGET /admin/delete/country/632a8476749ef611510c2f39 [36m302[0m 36.587 ms - 124[0m
+[0mGET /admin/list/country [32m200[0m 35.938 ms - 5171[0m
+[0mGET /admin/list/state [31m500[0m 404.354 ms - 2024[0m
+[0mGET /admin/list/state [32m200[0m 77.519 ms - 6246[0m
+[0mGET /admin/list/country [32m200[0m 36.765 ms - 4897[0m
+[0mGET /admin/list/state [36m304[0m 51.096 ms - -[0m
+[0mGET /admin/list/country [36m304[0m 28.253 ms - -[0m
+[0mGET /admin/delete/country/632a846f749ef611510c2f2f [36m302[0m 49.537 ms - 124[0m
+[0mGET /admin/list/country [32m200[0m 81.014 ms - 4850[0m
+[0mGET /admin/list/country [32m200[0m 34.861 ms - 4584[0m
+[0mGET /admin/list/country [36m304[0m 30.662 ms - -[0m
+[0mGET /admin/add/country [32m200[0m 40.583 ms - 3210[0m
+[0mPOST /admin/add/country/create [36m302[0m 55.965 ms - 122[0m
+[0mGET /admin/add/country [32m200[0m 23.782 ms - 3486[0m
+[0mGET /admin/add/state [32m200[0m 390.247 ms - 4391[0m
+[0mPOST /admin/add/state/create [36m302[0m 37.814 ms - 118[0m
+[0mGET /admin/add/state [32m200[0m 28.757 ms - 4661[0m
+[0mPOST /admin/add/state/create [36m302[0m 25.947 ms - 118[0m
+[0mGET /admin/add/state [36m304[0m 26.641 ms - -[0m
+[0mPOST /admin/add/state/create [36m302[0m 27.234 ms - 118[0m
+[0mGET /admin/add/state [36m304[0m 23.320 ms - -[0m
+[0mGET /admin/list/country [32m200[0m 27.265 ms - 4895[0m
+[0mGET /admin/list/state [31m500[0m 58.897 ms - 2024[0m
+[0mGET /admin/list/state [32m200[0m 47.149 ms - 6876[0m
+[0mGET /admin/list/country [36m304[0m 22.802 ms - -[0m
+[0mGET /admin/delete/country/632a98e2404f164e8cbcc0e7 [36m302[0m 36.695 ms - 124[0m
+[0mGET /admin/list/country [32m200[0m 300.979 ms - 4858[0m
+[0mGET /admin/list/state [31m500[0m 39.639 ms - 2024[0m
+[0mGET /admin/list/state [31m500[0m 123.368 ms - 2024[0m
+[0mGET /admin/list/country [32m200[0m 43.287 ms - 4895[0m
+[0mGET /admin/list/state [31m500[0m 53.190 ms - 2024[0m
+[0mGET /admin/list/state [32m200[0m 28.996 ms - 5279[0m
+[0mGET /admin/add/country [32m200[0m 43.669 ms - 3210[0m
+[0mGET /admin/add/state [32m200[0m 25.695 ms - 4391[0m
+[0mPOST /admin/add/state/create [36m302[0m 61.349 ms - 118[0m
+[0mGET /admin/add/state [32m200[0m 27.923 ms - 4661[0m
+[0mPOST /admin/add/state/create [36m302[0m 29.387 ms - 118[0m
+[0mGET /admin/add/state [36m304[0m 22.571 ms - -[0m
+[0mPOST /admin/add/state/create [36m302[0m 33.250 ms - 118[0m
+[0mGET /admin/add/state [36m304[0m 26.157 ms - -[0m
+[0mPOST /admin/add/state/create [36m302[0m 27.959 ms - 118[0m
+[0mGET /admin/add/state [36m304[0m 22.008 ms - -[0m
+[0mPOST /admin/add/state/create [36m302[0m 28.220 ms - 118[0m
+[0mGET /admin/add/state [36m304[0m 23.659 ms - -[0m
+[0mPOST /admin/add/state/create [36m302[0m 19.909 ms - 118[0m
+[0mGET /admin/add/state [32m200[0m 24.271 ms - 4675[0m
+[0mGET /admin/list/country [36m304[0m 25.201 ms - -[0m
+[0mGET /admin/list/state [32m200[0m 56.733 ms - 6878[0m
+[0mGET /admin/list/country [36m304[0m 29.660 ms - -[0m
+[0mGET /admin/delete/country/632a8460749ef611510c2f22 [36m302[0m 38.071 ms - 124[0m
+[0mGET /admin/list/country [32m200[0m 24.478 ms - 4858[0m
+[0mGET /admin/list/state [32m200[0m 31.542 ms - 5812[0m
+[0mGET /admin/list/city [32m200[0m 125.267 ms - 5596[0m
+[0mGET /admin/list/customers [36m304[0m 59.186 ms - -[0m
+[0mGET /admin/add/country [36m304[0m 15.777 ms - -[0m
+[0mPOST /admin/add/country/create [36m302[0m 20.424 ms - 122[0m
+[0mGET /admin/add/country [32m200[0m 16.194 ms - 3486[0m
+[0mPOST /admin/add/country/create [36m302[0m 20.803 ms - 122[0m
+[0mGET /admin/add/country [36m304[0m 16.619 ms - -[0m
+[0mPOST /admin/add/country/create [36m302[0m 17.661 ms - 122[0m
+[0mGET /admin/add/country [36m304[0m 16.699 ms - -[0m
+[0mPOST /admin/add/country/create [36m302[0m 14.866 ms - 122[0m
+[0mGET /admin/add/country [32m200[0m 15.507 ms - 3484[0m
+[0mGET /admin/add/state [32m200[0m 18.530 ms - 4543[0m
+[0mPOST /admin/add/state/create [36m302[0m 29.722 ms - 118[0m
+[0mGET /admin/add/state [32m200[0m 22.339 ms - 4813[0m
+[0mPOST /admin/add/state/create [36m302[0m 32.416 ms - 118[0m
+[0mGET /admin/add/state [36m304[0m 22.498 ms - -[0m
+[0mPOST /admin/add/state/create [36m302[0m 26.254 ms - 118[0m
+[0mGET /admin/add/state [36m304[0m 22.986 ms - -[0m
+[0mGET /admin/add/city [32m200[0m 152.784 ms - 5284[0m
+[0mGET /get_data?type=load_state&parent_value=632a9a7d515afa97374acd91 [32m200[0m 13.192 ms - 26[0m
+[0mPOST /admin/add/city/create [36m302[0m 40.349 ms - 116[0m
+[0mGET /admin/add/city [32m200[0m 25.519 ms - 5553[0m
+[0mGET /get_data?type=load_state&parent_value=632a846b749ef611510c2f2a [32m200[0m 11.261 ms - 23[0m
+[0mPOST /admin/add/city/create [36m302[0m 38.575 ms - 116[0m
+[0mGET /admin/add/city [36m304[0m 17.980 ms - -[0m
+[0mGET /get_data?type=load_state&parent_value=632a9a7d515afa97374acd91 [36m304[0m 12.834 ms - -[0m
+[0mPOST /admin/add/city/create [36m302[0m 33.805 ms - 116[0m
+[0mPOST /admin/add/city/create [36m302[0m 26.755 ms - 116[0m
+[0mGET /admin/add/city [32m200[0m 23.392 ms - 5584[0m
+[0mGET /get_data?type=load_state&parent_value=632a846b749ef611510c2f2a [36m304[0m 11.437 ms - -[0m
+[0mPOST /admin/add/city/create [36m302[0m 39.024 ms - 116[0m
+[0mGET /admin/add/city [32m200[0m 21.236 ms - 5553[0m
+[0mGET /admin/add/country [32m200[0m 18.993 ms - 3210[0m
+[0mGET /admin/list/country [32m200[0m 24.348 ms - 5517[0m
+[0mGET /admin/list/city [32m200[0m 38.383 ms - 7340[0m
+[0mGET /admin/list/country [36m304[0m 18.662 ms - -[0m
+[0mGET /admin/list/state [32m200[0m 36.359 ms - 7103[0m
+[0mGET /admin/list/city [36m304[0m 36.398 ms - -[0m
+[0mGET /admin/list/country [36m304[0m 20.138 ms - -[0m
+[0mGET /admin/delete/country/632a9a7d515afa97374acd91 [36m302[0m 30.882 ms - 124[0m
+[0mGET /admin/list/country [32m200[0m 21.791 ms - 5480[0m
+[0mGET /admin/list/state [32m200[0m 34.212 ms - 6353[0m
+[0mGET /admin/list/city [32m200[0m 26.827 ms - 6528[0m
+[0mGET /admin/list/city [36m304[0m 125.240 ms - -[0m
+[0mGET /admin/list/city [36m304[0m 61.170 ms - -[0m
+[0mGET /admin/list/state [36m304[0m 35.445 ms - -[0m
+[0mGET /admin/list/country [32m200[0m 25.445 ms - 5206[0m
+[0mGET /admin/list/customers [36m304[0m 36.553 ms - -[0m
+[0mGET /admin/add/country [36m304[0m 18.398 ms - -[0m
+[0mGET /admin/list/country [36m304[0m 23.772 ms - -[0m
+[0mGET /admin/list/state [36m304[0m 38.397 ms - -[0m
+[0mGET /admin/list/city [36m304[0m 45.058 ms - -[0m
+[0mGET /admin/list/state [36m304[0m 42.361 ms - -[0m
+[0mGET /admin/delete/state/632a9a4f515afa97374acd58 [36m302[0m 59.331 ms - 120[0m
+[0mGET /admin/list/state [32m200[0m 37.286 ms - 6302[0m
+[0mGET /admin/list/city [31m500[0m 36.677 ms - 2047[0m
+[0mGET /admin/list/city [31m500[0m 127.747 ms - 2047[0m
+[0mGET /admin/list/state [31m500[0m 78.871 ms - 2024[0m
+[0mGET /admin/list/state [31m500[0m 36.026 ms - 2024[0m
+[0mGET /admin/list/state [31m500[0m 43.271 ms - 2024[0m
+[0mGET /admin/list/state [31m500[0m 43.218 ms - 2024[0m
+[0mGET /admin/list/state [31m500[0m 39.937 ms - 2024[0m
+[0mGET /admin/list/country [36m304[0m 29.811 ms - -[0m
+[0mGET /admin/list/country [36m304[0m 30.198 ms - -[0m
+[0mGET /admin/list/state [31m500[0m 32.740 ms - 2024[0m
+[0mGET /admin/list/state [32m200[0m 25.377 ms - 5390[0m
+[0mGET /admin/add/country [36m304[0m 18.147 ms - -[0m
+[0mGET /admin/add/state [32m200[0m 25.133 ms - 4467[0m
+[0mPOST /admin/add/state/create [36m302[0m 68.855 ms - 118[0m
+[0mGET /admin/add/state [32m200[0m 29.066 ms - 4737[0m
+[0mPOST /admin/add/state/create [36m302[0m 26.523 ms - 118[0m
+[0mGET /admin/add/state [36m304[0m 34.176 ms - -[0m
+[0mPOST /admin/add/state/create [36m302[0m 23.081 ms - 118[0m
+[0mGET /admin/add/state [32m200[0m 23.439 ms - 4754[0m
+[0mPOST /admin/add/state/create [36m302[0m 26.951 ms - 118[0m
+[0mGET /admin/add/state [32m200[0m 19.203 ms - 4737[0m
+[0mPOST /admin/add/state/create [36m302[0m 28.965 ms - 118[0m
+[0mGET /admin/add/state [36m304[0m 21.975 ms - -[0m
+[0mPOST /admin/add/state/create [36m302[0m 40.699 ms - 118[0m
+[0mGET /admin/add/state [36m304[0m 19.992 ms - -[0m
+[0mPOST /admin/add/state/create [36m302[0m 26.432 ms - 118[0m
+[0mGET /admin/add/state [36m304[0m 22.716 ms - -[0m
+[0mPOST /admin/add/state/create [36m302[0m 24.376 ms - 118[0m
+[0mGET /admin/add/state [36m304[0m 22.654 ms - -[0m
+[0mPOST /admin/add/state/create [36m302[0m 19.404 ms - 118[0m
+[0mGET /admin/add/state [32m200[0m 23.831 ms - 4753[0m
+[0mPOST /admin/add/state/create [36m302[0m 24.207 ms - 118[0m
+[0mGET /admin/add/state [32m200[0m 23.407 ms - 4737[0m
+[0mGET /admin/add/city [32m200[0m 22.910 ms - 5181[0m
+[0mGET /get_data?type=load_state&parent_value=632a846b749ef611510c2f2a [32m200[0m 9.110 ms - 26[0m
+[0mPOST /admin/add/city/create [36m302[0m 49.338 ms - 116[0m
+[0mGET /admin/add/city [32m200[0m 25.145 ms - 5450[0m
+[0mGET /get_data?type=load_state&parent_value=632a847a749ef611510c2f3e [32m200[0m 8.832 ms - 13[0m
+[0mPOST /admin/add/city/create [36m302[0m 32.478 ms - 116[0m
+[0mGET /admin/add/city [36m304[0m 26.960 ms - -[0m
+[0mGET /get_data?type=load_state&parent_value=632a846b749ef611510c2f2a [36m304[0m 8.097 ms - -[0m
+[0mPOST /admin/add/city/create [36m302[0m 30.945 ms - 116[0m
+[0mGET /admin/add/city [36m304[0m 24.490 ms - -[0m
+[0mGET /get_data?type=load_state&parent_value=632a9a81515afa97374acd96 [32m200[0m 11.673 ms - 35[0m
+[0mPOST /admin/add/city/create [36m302[0m 35.622 ms - 116[0m
+[0mGET /admin/add/city [36m304[0m 25.317 ms - -[0m
+[0mGET /admin/list/country [36m304[0m 24.681 ms - -[0m
+[0mGET /admin/list/state [32m200[0m 39.217 ms - 7952[0m
+[0mGET /admin/list/city [32m200[0m 48.582 ms - 7238[0m
+[0mGET /admin/list/state [36m304[0m 33.945 ms - -[0m
+[0mGET /admin/list/state [36m304[0m 34.649 ms - -[0m
+[0mGET /admin/list/state [36m304[0m 35.847 ms - -[0m
+[0mGET /admin/get/state/632a9d6727b3107b2cd13fde [32m200[0m 9.638 ms - 299[0m
+[0mGET /admin/delete/state/632a9d6727b3107b2cd13fde [36m302[0m 29.747 ms - 120[0m
+[0mGET /admin/list/state [32m200[0m 38.092 ms - 7901[0m
+[0mGET /admin/add/country [36m304[0m 19.283 ms - -[0m
+[0mGET /admin/add/city [32m200[0m 20.572 ms - 5181[0m
+[0mGET /get_data?type=load_state&parent_value=632a846b749ef611510c2f2a [32m200[0m 6.669 ms - 13[0m
+[0mGET /admin/list/country [36m304[0m 16.367 ms - -[0m
+[0mGET /admin/list/city [32m200[0m 37.308 ms - 6526[0m
+[0mGET /admin/list/state [32m200[0m 34.758 ms - 7629[0m
+[0mGET /admin/list/city [36m304[0m 52.794 ms - -[0m
+[0mGET /admin/list/state [36m304[0m 30.699 ms - -[0m
+[0mGET /admin/add/country [36m304[0m 19.642 ms - -[0m
+[0mGET /admin/add/state [32m200[0m 21.455 ms - 4467[0m
+[0mPOST /admin/add/state/create [36m302[0m 25.032 ms - 118[0m
+[0mGET /admin/add/state [32m200[0m 17.574 ms - 4737[0m
+[0mGET /admin/add/city [36m304[0m 25.325 ms - -[0m
+[0mGET /get_data?type=load_state&parent_value=632a9a81515afa97374acd96 [32m200[0m 8.439 ms - 44[0m
+[0mPOST /admin/add/city/create [36m302[0m 38.405 ms - 116[0m
+[0mGET /admin/add/city [32m200[0m 21.668 ms - 5450[0m
+[0mGET /get_data?type=load_state&parent_value=632a9a81515afa97374acd96 [36m304[0m 9.139 ms - -[0m
+[0mPOST /admin/add/city/create [36m302[0m 38.044 ms - 116[0m
+[0mGET /admin/add/city [36m304[0m 22.031 ms - -[0m
+[0mGET /get_data?type=load_state&parent_value=632a9a81515afa97374acd96 [36m304[0m 7.377 ms - -[0m
+[0mPOST /admin/add/city/create [36m302[0m 35.791 ms - 116[0m
+[0mGET /admin/add/city [36m304[0m 22.299 ms - -[0m
+[0mGET /admin/add/city [32m200[0m 31.172 ms - 5181[0m
+[0mGET /admin/list/country [36m304[0m 23.665 ms - -[0m
+[0mGET /admin/list/state [32m200[0m 35.700 ms - 7947[0m
+[0mGET /admin/list/city [32m200[0m 34.934 ms - 7571[0m
+[0mGET /admin/list/state [36m304[0m 31.174 ms - -[0m
+[0mGET /admin/delete/state/632a9e1927b3107b2cd14097 [36m302[0m 31.322 ms - 120[0m
+[0mGET /admin/list/state [32m200[0m 38.722 ms - 7901[0m
+[0mGET /admin/list/city [32m200[0m 36.142 ms - 6526[0m
+[0mGET /admin/sign-out [36m302[0m 20.649 ms - 72[0m
+[0mGET /admin/sign-in [32m200[0m 6.526 ms - 4013[0m
+[0mGET /customer/register-form [32m200[0m 41.874 ms - 7325[0m
+[0mGET /get_data?type=load_state&parent_value=632a9a81515afa97374acd96 [32m200[0m 8.609 ms - 35[0m
+[0mGET /get_data?type=load_city&parent_value=Mumbai [32m200[0m 2.951 ms - 2[0m
+[0mGET /get_data?type=load_city&parent_value=Germ-state [32m200[0m 9.096 ms - 12[0m
+[0mPOST /api/admin/sign-in [33m404[0m 44.877 ms - 71[0m
+[0mPOST /api/admin/sign-in [32m200[0m 310.315 ms - 453[0m
+[0mPOST /api/admin/sign-in [33m403[0m 8.152 ms - 79[0m
+[0mPOST /api/admin/sign-in [33m404[0m 3.073 ms - 71[0m
+[0mPOST /api/admin/sign-in [33m403[0m 4.725 ms - 79[0m
+[0mPOST /api/admin/sign-in [33m404[0m 5.824 ms - 71[0m
+[0mGET /api/admin/ [32m200[0m 20.869 ms - 50[0m
+[0mGET /api/admin/ [33m401[0m 1.835 ms - -[0m
+[0mPOST /api/admin/add/country [32m201[0m 690.040 ms - 69[0m
+[0mPOST /api/admin/add/country [33m404[0m 16.068 ms - 68[0m
+[0mPOST /api/admin/add/country [33m401[0m 0.674 ms - -[0m
+[0mPOST /api/admin/add/state [32m201[0m 1591.247 ms - 76[0m
+[0mPOST /api/admin/add/state [33m404[0m 24.902 ms - 67[0m
+[0mPOST /api/admin/add/state [33m401[0m 1.915 ms - -[0m
+[0mPOST /api/admin/add/city [33m401[0m 0.942 ms - -[0m
+[0mPOST /api/admin/add/city [32m201[0m 15.764 ms - 62[0m
+[0mPOST /api/admin/add/city [32m201[0m 15.622 ms - 62[0m
+[0mPOST /api/admin/add/city [33m401[0m 0.945 ms - -[0m
+[0mPATCH /api/admin/edit/city [33m404[0m 16.903 ms - 60[0m
+[0mGET /api/admin/list/customers [32m200[0m 81.949 ms - 1804[0m
+[0mGET /api/admin/list/customers [33m401[0m 1.512 ms - -[0m
+[0mGET /api/admin/list/city [32m200[0m 123.787 ms - 469[0m
+[0mGET /api/admin/list/city [33m401[0m 0.258 ms - -[0m
+[0mGET /api/admin/list/state [33m401[0m 1.410 ms - -[0m
+[0mGET /api/admin/list/state [32m200[0m 54.187 ms - 1199[0m
+[0mGET /api/admin/list/state [33m401[0m 0.245 ms - -[0m
+[0mGET /api/admin/list/country [32m200[0m 18.527 ms - 451[0m
+[0mGET /api/admin/list/country [33m401[0m 0.375 ms - -[0m
+[0mPOST /api/admin/add/city [33m404[0m 27.970 ms - 67[0m
+[0mPOST /api/admin/add/city [32m201[0m 115.831 ms - 95[0m
+[0mPOST /api/admin/add/city [33m404[0m 20.912 ms - 89[0m
+[0mPATCH /api/admin/edit/country [33m401[0m 0.426 ms - -[0m
+[0mPATCH /api/admin/edit/country [33m401[0m 1.169 ms - -[0m
+[0mPATCH /api/admin/edit/country [33m404[0m 16.823 ms - 61[0m
+[0mPATCH /api/admin/edit/country [32m200[0m 17.574 ms - 61[0m
+[0mPATCH /api/admin/edit/state [33m404[0m 15.140 ms - 60[0m
+[0mPATCH /api/admin/edit/state [33m404[0m 21.613 ms - 64[0m
+[0mGET /api/admin/list/state [33m401[0m 0.252 ms - -[0m
+[0mGET /api/admin/list/state [33m401[0m 0.254 ms - -[0m
+[0mGET /api/admin/list/state [32m200[0m 22.680 ms - 1196[0m
+[0mPATCH /api/admin/edit/state [32m200[0m 21.226 ms - 59[0m
+[0mPATCH /api/admin/edit/state [33m404[0m 16.604 ms - 70[0m
+[0mPATCH /api/admin/edit/city [33m404[0m 26.229 ms - 63[0m
+[0mPATCH /api/admin/edit/city [32m200[0m 27.368 ms - 58[0m
+[0mPATCH /api/admin/edit/city [33m401[0m 0.278 ms - -[0m
+[0mGET /api/admin/list/customer/6321ed58aeb8bb1200c9aa24 [33m401[0m 3.651 ms - -[0m
+[0mGET /api/admin/list/customers [32m200[0m 16.207 ms - 1804[0m
+[0mGET /api/admin/list/customer/6324ad31dbfd2c474c77f35b [33m401[0m 0.673 ms - -[0m
+[0mGET /api/admin/list/customer/6324ad31dbfd2c474c77f35b [32m200[0m 15.086 ms - 601[0m
+[0mDELETE /api/admin/delete/country?id=632a847a749ef611510c2f3e [33m404[0m 3.241 ms - 166[0m
+[0mDELETE /api/admin/delete/country [33m404[0m 3.727 ms - 166[0m
+[0mDELETE /api/admin/delete/country?id=632a847a749ef611510c2f3e [33m404[0m 0.523 ms - 166[0m
+[0mDELETE /api/admin/delete/state?id=632a847a749ef611510c2f3e [33m404[0m 0.738 ms - 164[0m
+[0mPOST /api/customer/sign-in [33m404[0m 0.778 ms - 160[0m
+[0mPOST /api/Customer/sign-in [33m404[0m 0.704 ms - 160[0m
+[0mPOST /api/Customer/sign-in [33m403[0m 20.246 ms - 89[0m
+[0mPOST /api/Customer/sign-in [33m403[0m 6.658 ms - 79[0m
+[0mPOST /api/Customer/sign-in [33m403[0m 125.022 ms - 55[0m
+[0mPOST /api/Customer/sign-in [32m200[0m 107.833 ms - 429[0m
+[0mGET /api/Customer/ [32m200[0m 20.262 ms - 50[0m
+[0mGET /api/Customer/ [32m200[0m 56.338 ms - 53[0m
+[0mGET /api/Customer/ [33m401[0m 4.636 ms - -[0m
+[0mGET /api/Customer/sign-out [33m401[0m 0.390 ms - -[0m
+[0mGET /api/Customer/sign-out [33m404[0m 18.969 ms - 66[0m
+[0mPOST /api/Customer/sign-in [32m200[0m 134.493 ms - 429[0m
+[0mGET /api/Customer/sign-out [33m404[0m 46.095 ms - 66[0m
+[0mGET /api/Customer/sign-out [32m200[0m 77.889 ms - 52[0m
+[0mDELETE /api/admin/delete/state [33m404[0m 4.373 ms - 164[0m

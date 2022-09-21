@@ -141,10 +141,18 @@ module.exports.delete_country = async function (req, res) {
     try {
         let country = await Country.findById(req.params.id);
         if (country) {
-            let name = country.Country_Name;
-            await State.deleteMany({ Country: country._id })
-            await City.deleteMany({ Country: country._id })
-            country.remove();
+            let states =  await State.find({ Country :country._id}) 
+            for(state of states){
+                state.isDeleted = true;
+                state.save();
+            }
+            cities = await City.find({ Country :country._id})
+            for(city of cities){
+                city.isDeleted = true;
+            city.save();
+            }
+            country.isDeleted  = true;
+            country.save();
             return res.status(200).json({
                 message: `Successfully deleted ${name}`,
                 success : true
@@ -167,12 +175,13 @@ module.exports.delete_state = async function (req, res) {
     try {
         let state = await State.findById(req.params.id);
         if (state) {
-            let name = state.State;
-            await City.deleteMany({ State: req.params.id })
-            let country = await Country.findByIdAndUpdate(state.Country,
-                { $pull: { States: req.params.id } });
-
-            state.remove();
+            cities = await City.find({ State :req.params.id})
+            for(city of cities){
+                city.isDeleted = true;
+                city.save();
+            }
+            state.isDeleted  = true;
+            state.save();
             return res.status(200).json({
                 message: `Successfully deleted state with ${name}`,
                 success : true
@@ -194,10 +203,8 @@ module.exports.delete_city = async function (req, res) {
     try {
         let city = await City.findById(req.params.id);
         if (city) {
-            let name = city.City;
-            await State.findByIdAndUpdate(city.State,
-                { $pull: { Cities: req.params.id } });
-            city.remove();
+            city.isDeleted  = true;
+            city.save();
             return res.status(200).json({
                 message: `Successfully deleted city with ${name}`,
                 success : true

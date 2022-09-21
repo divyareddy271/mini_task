@@ -117,3 +117,17 @@ module.exports.Dashboard  = async function(req,res){
         customer : customer
     })
 }
+module.exports.edit= async function(req,res){
+    const user= await Customer.findById(req.params.id);
+    let country = await Country.find({});
+    if(user && user.role =="user"){
+       return res.render("edit_details",{
+          title:"Update",
+          user: user,
+          country : country,
+      })
+    }
+    else{
+       return res.redirect("/customer/sign-in");
+    }
+ }

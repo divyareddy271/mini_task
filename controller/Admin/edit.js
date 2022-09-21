@@ -100,11 +100,18 @@ module.exports.Editing_city  = async function(req,res){
 module.exports.delete_country  = async function(req,res){
     let country = await Country.findById(req.params.id);
    if(country){
-    await State.deleteMany({ Country :country._id}) 
-    await City.deleteMany({ Country :country._id})
+      let states =  await State.find({ Country :country._id}) 
+      for(state of states){
+        state.isDeleted = true;
+        state.save();
+      }
+    cities = await City.find({ Country :country._id})
+    for(city of cities){
+        city.isDeleted = true;
+       city.save();
+      }
     country.isDeleted  = true;
     country.save();
-    //country.remove();
     req.flash("success","Successfully removed country")
     return res.redirect("back")
    }
@@ -116,10 +123,11 @@ module.exports.delete_state  = async function(req,res){
    let state = await State.findById(req.params.id);
    if(state)
    {
-    console.log(state,state.Country,state.State);
-   // await City.deleteMany({ State :req.params.id})
-    //let country = await Country.findByIdAndUpdate(state.Country, 
-      //  {$pull : {States : req.params.id}});
+    cities = await City.find({ State :req.params.id})
+    for(city of cities){
+        city.isDeleted = true;
+       city.save();
+      }
     console.log(country.States,req.params.id)
     state.isDeleted  = true;
     state.save();

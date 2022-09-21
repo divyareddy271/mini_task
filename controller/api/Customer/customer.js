@@ -189,8 +189,8 @@ module.exports.register  = async function(req,res){
     })
     
 }
-module.exports.signout  = function(req,res){
-    req.logout(function(err){
+module.exports.signout  = async function(req,res){
+    await req.logout(function(err){
         if(err){
             return res.json(404,{
                 message:"Not authorized to access user page",
@@ -202,17 +202,17 @@ module.exports.signout  = function(req,res){
             success : true
         })
     });
-    return res.status(404).json({
-        message:"unauthorized to access. Please login",
-        success : false
-    })
+    // return res.status(404).json({
+    //     message:"unauthorized to access. Please login",
+    //     success : false
+    // })
     
 }
 module.exports.Dashboard  = function(req,res){
     try{
         if(req.user){
             return res.status(200).json({
-                message:"Wlocome to admin page",
+                message:"Wlocome to customer page",
                 success : true
             })
         }

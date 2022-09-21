@@ -7,7 +7,7 @@ const admin_controller = require("../controller/Admin/admin")
 
 Router.get("/sign-in",admin_controller.signin)
 Router.get("/",checkauthentication,checkRole(["admin"]),admin_controller.Dashboard);
-
+Router.get("/edit/:id",checkauthentication,checkRole(["admin"]),admin_controller.edit);
 Router.post("/sign-in/create-session",localAuth,checkRole(["admin"]),admin_controller.create_session);
 Router.get("/sign-out",checkauthentication,checkRole(["admin"]),admin_controller.signout)
 

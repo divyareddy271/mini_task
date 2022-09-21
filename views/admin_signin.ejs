@@ -14,10 +14,12 @@
                     <span>or use your email account</span>
                 </div>
                 <div>
-                    <form action="/admin/sign-in/create-session" method="post">
+                    <form onsubmit="return validation()" name="myform" action="/admin/sign-in/create-session" method="post">
                         <input autocomplete="on" type="text" placeholder="Email" id="email" name="email">
+                        <span style="text-align: center;color: black;" id="text"></span>
                         <input autocomplete="off" type="password" placeholder="Password" id="password" name="password">
-                       <button style="margin-bottom: 50px;" type="submit">Sign up</button>
+                        <span style="text-align: center;" id="pass-text"></span>
+                        <button style="margin-bottom: 50px;" type="submit">Sign in</button>
                         
                     </form>
                 </div>
@@ -27,6 +29,30 @@
 
             </div>
         </div>
-        
+        <script>
+            function validation(){
+               var valid = true;
+                var email = document.forms["myform"]["email"].value; 
+                var password = document.forms["myform"]["password"].value; 
+                if(email==""){
+                document.getElementById("text").innerHTML = "Country cannot be empty"
+                valid = false; 
+                } 
+                else {
+                    document.getElementById("text").innerHTML = ""
+                }
+                if(password==""){
+                document.getElementById("pass-text").innerHTML = "Password cannot be empty"
+                valid = false; 
+                } 
+                else {
+                    document.getElementById("text").innerHTML = ""
+                }
+                if(valid){
+                    return true;
+                }
+                return false
+            }
+        </script>
     </body>
 </html>

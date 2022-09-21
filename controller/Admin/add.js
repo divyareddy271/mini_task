@@ -87,9 +87,9 @@ module.exports.Create_state  = async function(req,res){
     }
 }
 module.exports.Create_city  =async  function(req,res){
-    //console.log(req.body)
+    console.log(req.body)
     try {
-        if(req.body.Country && req.bod.State && req.body.City){
+        if(req.body.Country && req.body.State && req.body.City){
             let state = await State.findOne({
                 State : req.body.State,
                Country : req.body.Country

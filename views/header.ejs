@@ -8,9 +8,12 @@
                 <li><a href="/admin/list/country">list country/state/city</a></li>
                 <li><a href="/admin/add/country">Add country/state/city</a></li>
                 <li><a href="/admin/list/customers">List of customer</a></li>
+                
                 <li style="float:right"><a href="/admin/sign-out">Sign out</a></li>
                 <li style="float:right"><a  href="/admin/"><%=locals.user.Name %></a></li>
+                <li style="float:right"><a  href="/admin/edit/<%=locals.user.id%>">Edit</a></li>
             <% } else { %>
+                <li style="float:right"><a  href="/customer/edit/<%=locals.user.id%>">Edit</a></li>
             <li style="float:right"><a href="/customer/sign-out">Sign out</a></li>
             <li style="float:right"><a  href="/customer/"><%=locals.user.Name %></a></li>
             <% } %>
